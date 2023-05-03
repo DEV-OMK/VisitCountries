@@ -1,0 +1,144 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #161624;
+}
+
+.responsive-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 70%;
+  }
+}
+
+.countries-list-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.countries-list-container {
+  height: 50vh;
+  padding: 0px;
+  list-style-type: none;
+  width: 100%;
+  flex-shrink: 0;
+  overflow-y: scroll;
+  border: 1px solid #94a3b8;
+  background-color: #1f1f2f;
+  border-radius: 12px;
+  margin-top: 0px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #94a3b8;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.country {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #f1f5f9;
+}
+
+.visit-status {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: #94a3b8;
+  padding-inline: 10px;
+}
+
+.visit-button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: #f8fafc;
+  background-color: #3b82f6;
+  padding: 8px;
+  padding-inline: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.visited-countries-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.country-item {
+  width: 31%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-image {
+  width: 100%;
+}
+
+.country-and-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f2f;
+  padding: 8px;
+}
+
+.country-name {
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 16px;
+  color: #cbd5e1;
+  margin: 0px;
+}
+
+.remove-button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  color: #f8fafc;
+  background-color: transparent;
+  padding: 5px;
+  padding-inline: 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.zero-visit {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  justify-self: center;
+}
